@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  animation: fade 4s infinite ease;
+}
+
+@keyframes fade {
+  0% {
+    background: url("./assets/img/1.png");
+    background-size: cover;
+    background-color: #f77f00;
+  }
+  25% {
+    background: url("./assets/img/2.png");
+    background-color: #fcbf49;
+    background-size: cover;
+  }
+  55% {
+    background: url("./assets/img/3.png");
+    background-color: #d62828;
+    background-size: cover;
+  }
+  100% {
+    background: url("./assets/img/4.png");
+    background-color: #eae2b7;
+    background-size: cover;
+  }
+}
